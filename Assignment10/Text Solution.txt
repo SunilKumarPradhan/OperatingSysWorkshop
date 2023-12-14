@@ -1,0 +1,10 @@
+Q6. d, e, 
+Q7. p+n denotes the nth index element of the array.
+Q8. f(arname + 2);
+Q9. f (int *a, int a, float y) {.....}
+Q10. 21
+Q11. 22
+Q12. pmsg is an array of character type and amsg is a          pointer of a character
+Q13. 19...I am in 5th Sem CSE
+Q14. 14...Studied in CSE
+Q15. 9...ITER CSE 

@@ -1,0 +1,1 @@
+// upto question 5 takk nahi n kiya hai
