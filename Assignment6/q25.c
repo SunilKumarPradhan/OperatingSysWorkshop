@@ -29,10 +29,10 @@ void output(const char *str, enum State state) {
 
 void processString(const char *input) {
     enum State currentState = START;
-    char buffer[MAX_LENGTH] = "";
-    size_t bufferIndex = 0;
+    char buffer[MAX_LENGTH] = ""; 
+    size_t bufferIndex = 0; 
 
-    for (size_t i = 0; input[i] != '\0'; i++) {
+    for (size_t i = 0; input[i] != '\0'; i++) { 
         char currentChar = input[i];
 
         switch (currentState) {
@@ -55,7 +55,7 @@ void processString(const char *input) {
                     buffer[bufferIndex++] = currentChar;
                 } else if (isspace(currentChar)) {
                     currentState = NUMBER;
-                    buffer[bufferIndex] = '\0';
+                    buffer[bufferIndex] = '\0'; 
                     output(buffer, currentState);
                     currentState = START;
                     bufferIndex = 0;
@@ -67,7 +67,7 @@ void processString(const char *input) {
                     buffer[bufferIndex++] = currentChar;
                 } else if (isspace(currentChar)) {
                     currentState = IDENTIFIER;
-                    buffer[bufferIndex] = '\0';
+                    buffer[bufferIndex] = '\0'; // Corrected the single quotes around '\0'
                     output(buffer, currentState);
                     currentState = START;
                     bufferIndex = 0;
@@ -81,9 +81,8 @@ void processString(const char *input) {
 }
 
 int main() {
-    const char input[] = " 95 K9 .";
-    processString(input);
+    const char *inputString = "95 K9 .";
+    processString(inputString);
 
     return 0;
 }
-

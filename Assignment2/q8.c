@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    char color = 'B';  // You can change the value of color as needed
+    char color = 'k';  // You can change the value of color as needed
 
     switch (color) {
         case 'R':

@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-// Function prototypes
 void fun2(int n);
 
 void fun1(int n) {

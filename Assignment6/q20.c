@@ -1,20 +1,20 @@
 #include <stdio.h>
 
-void sum_n_avg(double n1, double n2, double n3, double *sum, double *avg) {
-    *sum = n1 + n2 + n3;
-    *avg = *sum / 3.0;
+void sum_n_avg(double a, double b, double c, double *sum, double *avg);
+
+void sum_n_avg(double a, double b, double c, double *sum, double *avg) {
+    *sum = a + b + c;
+    *avg = *sum / 3;
 }
 
 int main() {
-    double num1 = 10.5, num2 = 20.7, num3 = 15.3;
-    double sum, avg;
+    double one = 10.5;
+    double two = 20.7;
+    double three = 15.3;
+    double sum_of_3, avg_of_3;
+    sum_n_avg(one, two, three, &sum_of_3, &avg_of_3);
 
-    sum_n_avg(num1, num2, num3, &sum, &avg);
-
-    printf("Input numbers: %f, %f, %f\n", num1, num2, num3);
-    printf("Sum: %f\n", sum);
-    printf("Average: %f\n", avg);
+    printf("Sum: %lf\nAverage: %lf\n", sum_of_3, avg_of_3);
 
     return 0;
 }
-

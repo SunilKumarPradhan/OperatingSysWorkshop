@@ -4,8 +4,8 @@ int main(void) {
     double x, y, m, e;
 
     // Assuming values for m and e are given
-    m = /* some value */
-    e = /* some value */
+    m =15 ;/* some value */
+    e =3; /* some value */
     x = m;
     y = 1;
 

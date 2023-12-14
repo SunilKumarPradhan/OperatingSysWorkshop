@@ -1,19 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int arr1[] = {10, 13, 20, 33, 44};
-    double arr2[] = {10.2, 13.3, 20.0, 33.3, 45.3, 89.9};
+    int a[] = {10,13,20,33,44};
+    float b[] = {10.2,13.3,20.0,33.3,45.3,89.9};
+    int *ptr1= a;
+    float *ptr2= b;
 
-    printf("Values in arr1:\n");
-    for (int i = 0; i < sizeof(arr1) / sizeof(arr1[0]); i++) {
-        printf("Value: %d, Address: %p\n", arr1[i], (void *)&arr1[i]);
+    for (int i = 0; i < sizeof(a) / sizeof(a[0]); i++) {
+        printf("Address of a[%d]: %p\n", i, ptr1+ i);
+        printf("Value of a[%d]: %d\n", i, *(ptr1 + i));
     }
 
-    printf("\nValues in arr2:\n");
-    for (int i = 0; i < sizeof(arr2) / sizeof(arr2[0]); i++) {
-        printf("Value: %.1f, Address: %p\n", arr2[i], (void *)&arr2[i]);
+    printf("\n");
+
+    for (int i = 0; i < sizeof(b) / sizeof(b[0]); i++) {
+        printf("Address of b[%d]: %p\n", i, ptr2 + i);
+        printf("Value of b[%d]: %f\n", i, *(ptr2 + i));
     }
 
     return 0;
 }
-
