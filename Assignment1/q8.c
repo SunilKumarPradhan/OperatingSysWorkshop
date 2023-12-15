@@ -15,11 +15,11 @@ int main() {
 
     // (c) !flag||(y + z >= x − z)
     int result_c = !flag || (y + z >= x - z);
-    printf("(c) !flag||(y + z >= x − z): %d\n", result_c);
+    printf("(c) !flag||(y + z >= x-z): %d\n", result_c);
 
     // (d) !(flag||(y + z >= x − z))
     int result_d = !(flag || (y + z >= x - z));
-    printf("(d) !(flag||(y + z >= x − z)): %d\n", result_d);
+    printf("(d) !(flag||(y + z >= x-z)): %d\n", result_d);
 
     return 0;
 }

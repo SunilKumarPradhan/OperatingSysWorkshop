@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main()
 {
-static int i=5;
+ static int i=5;
 if(--i){
 main();
 printf("%d ",i);
 }
+
+printf("%d ",i);
 return 0;
 }

@@ -20,7 +20,7 @@ int main() {
     printf("Enter three characters: ");
     scanf(" %3s", str);
 
-    // Displaying the characters using %s format specifier
+   
     printf("You entered: %s\n", str);
 
     return 0;

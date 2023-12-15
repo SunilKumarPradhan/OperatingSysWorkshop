@@ -7,13 +7,14 @@ int main() {
   printf("Enter the MMOC product code\n");
   scanf("%s", str);
   int d = 0;
-  while (!isdigit(str[d++]))
-    ;
+  while (!isdigit(str[d++]));
+
   char code[100];
   strncpy(code, str, d-- - 1);
+  
   int i = d;
-  while (!isalpha(str[d++]))
-    ;
+  while (!isalpha(str[d++]));
+  
   char id[100];
   strncpy(id, str + i, d-- - 1 - i);
   char quan[100];

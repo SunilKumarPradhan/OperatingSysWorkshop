@@ -18,7 +18,7 @@ int main() {
 
     printf("%s\n", ++(p++->c));
     printf("%c\n", *p++->c);
-    printf("%d\n", ++p->i);
+    printf("%d\n", ++p ->i);
     printf("%s\n", p[0].c);
     printf("%s\n", p->c);
 

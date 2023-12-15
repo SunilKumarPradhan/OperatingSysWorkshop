@@ -13,7 +13,6 @@ int main() {
     int x = 0, i = 5;
     for (; i > 0; i--) {
         x = x + total(i);
-        // The function total() is called in each iteration of the loop.
     }
     printf("The total number of times the function total() is called is %d\n", x);
     return 0;

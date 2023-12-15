@@ -6,6 +6,8 @@ char *trim_blanks(char *trimmed, const char *to_trim) {
   while (*to_trim != '\0' && *to_trim == ' ') {
     to_trim++;
   }
+
+  
   strcpy(trimmed, to_trim);
   int i = 0;
   while (trimmed[i] != '\0') {
@@ -16,7 +18,7 @@ char *trim_blanks(char *trimmed, const char *to_trim) {
     if (trimmed[d] == '\0') {
       break;
     }
-    i = d + 1;
+    i = d + 1;  
   }
   trimmed[i] = '\0';
   return trimmed;

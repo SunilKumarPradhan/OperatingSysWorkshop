@@ -23,7 +23,7 @@ int main() {
     // (e) i = 3.0;
     i = 3.0;
     printf("(e) Result: %d\n", i);
-
+ 
     // (f) i = -3.5;
     i = -3.5;
     printf("(f) Result: %d\n", i);

@@ -12,10 +12,10 @@ int main() {
     printf("String 1:\n");
     printf("Original String: %s\n", str1);
 
-    token = strtok(str1, delimiters); // Get the first token
+    token = strtok(str1, delimiters); 
     while (token != NULL) {
         printf("Token %d: %s\n", ++count, token);
-        token = strtok(NULL, delimiters); // Get the next token
+        token = strtok(NULL, delimiters); 
     }
 
     printf("Total tokens in String 1: %d\n", count);
@@ -23,7 +23,7 @@ int main() {
     printf("\nString 2:\n");
     printf("Original String: %s\n", str2);
 
-    count = 0; // Reset count for the second string
+    count = 0; 
 
     token = strtok(str2, delimiters); // Get the first token
     while (token != NULL) {

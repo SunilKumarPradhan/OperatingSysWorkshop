@@ -15,16 +15,20 @@ int main(int argc, char *argv[]) {
 
     printf("\nTokenizing based on major delimiter '%s':\n", major_delim);
     char *token = strtok(str, major_delim);
+
+
     int token_count = 0;
     while (token != NULL) {
         printf("Token %d: %s\n", ++token_count, token);
 
-        printf("Subtokens based on sub delimiter '%s':\n", sub_delim);
-        char *subtoken = strtok(token, sub_delim);
-        int subtoken_count = 0;
-        while (subtoken != NULL) {
-            printf("Subtoken %d: %s\n", ++subtoken_count, subtoken);
-            subtoken = strtok(NULL, sub_delim);
+    printf("Subtokens based on sub delimiter '%s':\n", sub_delim);
+    char *subtoken = strtok(token, sub_delim);
+
+
+    int subtoken_count = 0;
+    while (subtoken != NULL) {
+        printf("Subtoken %d: %s\n", ++subtoken_count, subtoken);
+          subtoken = strtok(NULL, sub_delim);
         }
 
         token = strtok(NULL, major_delim);

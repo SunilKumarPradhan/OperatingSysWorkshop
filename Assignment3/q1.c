@@ -39,7 +39,7 @@ int main() {
     // Code snippet: 1(f)
     float x = 1.1;
     while (x == 1.1) {
-        printf("%f\n", x);
+        printf("Hello %f\n", x);
         x = x - 0.1;
     }
 

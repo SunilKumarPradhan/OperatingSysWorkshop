@@ -1,9 +1,3 @@
-/*Write a program to use the idea of multiple calls to a function with input/output parameters to
-sort 6 integer numbers in ascending order without using any sorting algorithms. The prototype of the
-function to be used in your program to sort the numbers is given as void arrange(int *, int
-*); and also draw the data areas of calling function and arragne() function for the first function
-call arrange(....)*/
-
 #include <stdio.h>
 
 void arrange(int *a, int *b) {

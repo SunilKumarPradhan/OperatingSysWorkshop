@@ -26,7 +26,7 @@ int strncmp1(char *s, char *t, int n) {
   }
   return s[i] == t[i] ? 0 : s[i] == '\0' ? t[i] : s[i];
 }
-
+ 
 int main() {
   char s[100] = "My name is Rajdeep";
   char t[100] = "I am a b.Tech Student";
